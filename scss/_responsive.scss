@@ -1,0 +1,29 @@
+@include media-md {
+    .fv {
+        &__img {
+            // width: 75%;
+            background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.3),
+                rgba($primary-color, 0.3)
+                ), 
+            url('../../img/img-2.jpg') center top;
+            // height: 80vh;
+            background-size: cover;
+        }
+        &__bg {
+            width: 60%;
+        }
+        &__texts {
+            top: 21vh;
+            right: 15vw;
+        }
+
+    }
+    .nav {
+        width: 30vw;
+        right: 0;
+    }
+    
+}

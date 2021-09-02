@@ -1,0 +1,45 @@
+.fv {
+  height: 100vh;
+  &__img {
+      width: 75%;
+    background: 
+    linear-gradient(
+        to right,
+        rgba($primary-color, 0.3),
+        rgba($primary-color, 0.3)
+        ), 
+    url('../../img/img-1.jpg') center top;
+    height: 80vh;
+    background-size: cover;
+  }
+  &__bg {
+      background: #222222;
+      width: 75%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      right: 0;
+  }
+  &__texts {
+    // border: 1px solid red;
+    position: absolute;
+    padding-right: 1.5rem;
+    right: 0;
+    // width: 70%;
+    top: 25vh;
+    color: $color-white;
+
+    h2 {
+        font-size: 4rem;
+    }
+    h5 {
+        font-size: 1rem;
+        font-weight: 500;
+        &:nth-child(2) {
+            margin-bottom: .5rem;
+        }
+    }
+  }
+
+}
