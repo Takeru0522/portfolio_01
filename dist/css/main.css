@@ -99,6 +99,7 @@ li {
 }
 
 .nav .menu-nav {
+  overflow: hidden;
   margin-top: 8rem;
   display: flex;
   flex-direction: column;
@@ -221,6 +222,36 @@ li {
   margin-bottom: .5rem;
 }
 
+.home-contents {
+  padding: 0 0.2rem;
+  margin-top: 3rem;
+}
+
+.home-contents .home-content {
+  border: 1px solid red;
+}
+
+.home-contents .home-content.layout-a {
+  background: #b87c7c;
+  background: url("../img/img-3.jpg");
+}
+
+.home-contents .home-content__title {
+  color: #333333;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home-contents .home-content__img {
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+
+.home-contents .home-content__desc {
+  margin-bottom: 1.8rem;
+  font-size: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .fv__img {
     background: linear-gradient(to right, rgba(51, 51, 51, 0.3), rgba(51, 51, 51, 0.3)), url("../../img/img-2.jpg") center top;
@@ -268,4 +299,16 @@ header .header-logo__text {
 
 header .header-logo__text--last {
   font-size: 1rem;
+}
+
+.readmore-btn {
+  background: #111;
+  display: inline-block;
+  padding: .8rem 2.6rem;
+}
+
+.readmore-btn a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
 }

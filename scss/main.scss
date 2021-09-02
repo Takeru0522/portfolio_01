@@ -28,6 +28,17 @@ header {
         }
     }
 }
+.readmore-btn {
+    background: #111;
+    // width: 160px;
+    display: inline-block;
+    padding: .8rem 2.6rem ;
+    a {
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
 footer {
 
 }

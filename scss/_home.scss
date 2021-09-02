@@ -41,5 +41,34 @@
         }
     }
   }
+}
+.home-contents {
+    padding: 0 0.2rem;
+    margin-top: 3rem;
+    .home-content {
+        border: 1px solid red;
+        &.layout-a {
+            background: rgb(184, 124, 124);
+            background: url('../img/img-3.jpg');
+        }
+        &.layout-b {
 
+        }
+        &.layout-c {
+
+        }
+        &__title {
+            color: $primary-color;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        &__img {
+            width: 100%;
+            margin-bottom: 1.8rem;
+        }
+        &__desc {
+            margin-bottom: 1.8rem;
+            font-size: 1rem;
+        }
+    }
 }
