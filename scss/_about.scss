@@ -1,0 +1,126 @@
+.fv-about {
+    height: 70vh;
+    &__img {
+        width: 75%;
+      background: 
+      linear-gradient(
+          to right,
+          rgba($primary-color, 0.3),
+          rgba($primary-color, 0.3)
+          ), 
+      url('../../img/img-7-1.jpg') center top;
+      height: 60vh;
+      background-size: cover;
+    }
+    &__bg {
+        background: #222222;
+        width: 50%;
+        height: 70vh;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        right: 0;
+    }
+    &__texts {
+      // border: 1px solid red;
+      position: absolute;
+      padding-right: 1.5rem;
+      right: 0;
+      // width: 70%;
+      top: 25vh;
+      color: $color-white;
+  
+      h2 {
+          font-size: 3.5rem;
+      }
+      h5 {
+          font-size: 1rem;
+          font-weight: 500;
+          &:nth-child(2) {
+              margin-bottom: .5rem;
+          }
+      }
+    }
+}
+.vision {
+    @include content-padding;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    &__title {
+        @include section-title;
+        margin-bottom: 2rem;
+    }
+    &__sub-title {
+        font-size: 1.5;
+        margin-bottom: 2rem;
+    }
+    &__desc {
+        margin-bottom: 1.3rem;
+            font-size: 1rem;
+            line-height: 1.7rem;
+            color: $primary-color;
+    }
+}
+.ceo {
+    // height: 100%;
+    position: relative;
+    &__img {
+        width: 90vw;
+        z-index: 2;
+    }
+    &__text-wrap {
+        background: $color-gray;
+        padding: 0 25px 80px;
+        margin: 0 15px;
+        position: relative;
+        top: -100px;
+        z-index: -1;
+        height: 100%;
+    }
+    &__title {
+        @include section-title;
+        padding-top: 7.5rem;
+        margin-bottom: 2rem;
+    }
+}
+.company {
+    width: 100vw;
+    padding-bottom: 4rem;
+    padding-left: 10vw !important;
+    padding-right: 10vw !important;
+
+    @include content-padding;
+    
+    &__title {
+        @include section-title;
+        margin-bottom: 2rem;
+    }
+    &__table {
+        dl {
+            display: grid;
+            grid-template-columns: 40% 1fr;
+            padding: 1rem 0;
+            border-bottom: 1px solid $color-gray;
+            
+            &:nth-child(1) {
+                border-top: 1px solid $color-gray;
+            }
+        }
+        margin-bottom: 3rem;
+    }
+    &__map {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        padding-bottom: 150%;
+        position: relative;
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+}

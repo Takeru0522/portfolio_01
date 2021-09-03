@@ -47,8 +47,7 @@
     margin-top: 3rem;
     .home-content {
         &__title {
-            color: $primary-color;
-            font-size: 2rem;
+            @include section-title;
             margin-bottom: 2rem;
         }
         &__img {

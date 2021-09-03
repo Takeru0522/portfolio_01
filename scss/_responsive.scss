@@ -167,5 +167,86 @@
         }
 
     }
+
+    // about
+    .fv-about {
+        &__img {
+            width: 75%;
+            background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.1),
+                rgba($primary-color, 0.1)
+                ), 
+            url('../../img/img-7-2.jpg') center top;
+            height: 60vh;
+            background-size: cover; 
+        }
+        &__texts {
+            padding-right: 5rem;
+            h2 {
+                font-size: 5rem;
+            }
+            h5 {
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .vision {
+        padding: 0 20vw 100px;
+    }
+    .ceo {
+        padding: 0 10vw;
+        position: relative;
+
+        &__img {
+            width: 45%;
+        }
+        &__text-wrap {
+            right: -30%;
+            display: block;
+            margin: 0;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .company {
+        &__table {
+            // border: 1px solid red;
+            // width: 90vw;
+            padding-left: 7%;
+            dl {
+                grid-template-columns: 25% 1fr;
+                position: relative;
+                &:nth-child(1) {
+                    border-top: 1px solid $color-gray;
+                    &::before {
+                        content: '';
+                        width: 100px;
+                        height: 1px;
+                        background: $color-gray;
+                        position: absolute;
+                        top: -1px;
+                        left: -7%;
+                    }
+                    // width: 110%;
+                }
+            }
+        }
+        &__map {
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 40%;
+            position: relative;
+            iframe {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
     
 }

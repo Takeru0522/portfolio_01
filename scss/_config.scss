@@ -16,6 +16,10 @@ a {
 li {
     list-style-type: none;
 }
+@mixin section-title {
+    color: $primary-color;
+    font-size: 2rem;
+}
 
 @mixin transition-ease {
     transition: all .4s ease-in-out;
