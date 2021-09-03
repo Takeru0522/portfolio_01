@@ -2,8 +2,8 @@ const nav = document.querySelector('.nav')
 const menuBtn = document.querySelector('.menu-btn')
 const navItems = document.querySelectorAll('.menu-nav__item')
 const burger = document.querySelector('.menu-btn__burger')
+const header = document.querySelector('header')
 
-console.log(menuBtn)
 let showMenu = false
 
 menuBtn.addEventListener('click', toggleMenu)
@@ -20,4 +20,17 @@ function toggleMenu() {
         burger.classList.remove('open')
         showMenu = !showMenu
     }
+}
+
+// headerに透過＋ぼかしの背景をいれる
+window.addEventListener('scroll', blurHeader)
+
+function blurHeader() {
+    let pageY = window.pageYOffset;
+    if (pageY > 490) {
+        header.classList.add('blur')
+    } else {
+        header.classList.remove('blur')
+    }
+
 }
