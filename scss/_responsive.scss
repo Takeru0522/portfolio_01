@@ -18,12 +18,154 @@
         &__texts {
             top: 21vh;
             right: 15vw;
+
+            h2 {
+                font-size: 7rem;
+            }
+            h5 {
+                font-size: 1.7rem;
+            }
         }
 
     }
     .nav {
         width: 30vw;
         right: 0;
+    }
+    
+    // home
+    .home-contents {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        margin-top: 7rem;
+        
+    }
+    .home-content {
+        &:nth-child(1) {
+            width: 80vw;
+            margin: 0 auto;
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 2;
+            display: flex;
+            padding-left: 3rem;
+            padding-top: 7rem;
+            padding-bottom: 7rem;
+            
+        }
+        &:nth-child(2) {
+            padding-left: 10vw !important;
+        }
+        &:nth-child(3) {
+            padding-right: 10vw !important;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+            padding-top: 10rem !important;
+            position: relative;
+            top: -100px;
+            z-index: 0;
+            padding-bottom: 4rem;
+            // width: 40vw;
+        }
+        
+        &:nth-child(4) {
+            grid-row: 3 / span 1;
+            grid-column: 1 / span 2;
+            padding-left: 10vw !important;
+            padding-right: 10vw !important;
+        }
+        &:nth-child(5) {
+            padding-left: 10vw !important;
+            padding-right: 10vw !important;
+            grid-row: 4 / span 1;
+            grid-column: 1 / span 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 3rem;
+            .home-content__img {
+                grid-row: 1 / span 3;
+                grid-column: 2 / span 1;
+            }
+            .home-content__title {
+                grid-row: 1 / span 1;
+                grid-column: 1 / span 1;
+                margin-bottom: 0;
+            }
+            .home-content__desc {
+                grid-row: 2 / span 1;
+                grid-column: 1 / span 1;
+                margin-bottom: 0;
+            }
+            .readmore-btn-wrapper {
+                grid-row: 3 / span 1;
+                grid-column: 1 / span 1;
+                display: block;
+                width: auto;
+                width: 100%;
+                background: transparent !important;
+                display: flex !important;
+                justify-content: flex-start !important;
+                cursor: unset;
+            }
+        }
+
+    }
+    .layout-a {
+        z-index: 1;
+    }
+    .layout-a__wrapper {
+            // height: 100%;
+            width: 50%;
+            margin: 0 !important;
+    }
+    // .layout-b {
+    //     display: grid;
+    //     grid-template-columns: 2;
+    //     // .home-content__title {
+    //     //     grid-row: 1 / span 1;
+    //     //     grid-column: 1 / span 1;
+    //     // }
+    //     // .home-content__topics {
+    //     //     grid-row: 2 / span 1;
+    //     //     grid-column: 2 / span 1;
+    //     // }        
+    //     // .readmore-btn-wrapper {
+    //     //     grid-row: 3 / span 1;
+    //     //     grid-column: 2 / span 1;
+    //     //     display: block;
+    //     //     width: auto;
+    //     //     width: 100%;
+    //     //     background: transparent !important;
+    //     //     display: flex !important;
+    //     //     justify-content: flex-end !important;
+    //     //     cursor: unset;
+    //     // }
+
+    // }
+    .layout-c {
+        display: grid;
+        grid-template-columns: 2;
+        .home-content__title {
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+        }
+        .home-content__topics {
+            grid-row: 2 / span 1;
+            grid-column: 2 / span 1;
+        }        
+        .readmore-btn-wrapper {
+            grid-row: 3 / span 1;
+            grid-column: 2 / span 1;
+            display: block;
+            width: auto;
+            width: 100%;
+            background: transparent !important;
+            display: flex !important;
+            justify-content: flex-end !important;
+            cursor: unset;
+        }
+
     }
     
 }

@@ -30,15 +30,18 @@ header {
 }
 .readmore-btn {
     background: #111;
-    // width: 160px;
-    display: inline-block;
-    padding: .8rem 2.6rem ;
+    display: flex;
+    width: 160px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    // padding: .8rem 2.6rem ;
+    cursor: pointer;
+    color: white;
+    font-size: .8rem;
+    font-weight: 600;
     @include transition-ease;
-    a {
-        color: white;
-        font-size: .8rem;
-        font-weight: 600;
-    }
+
     &:hover {
         background: #888;
         
