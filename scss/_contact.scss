@@ -1,0 +1,169 @@
+.fv-contact {
+    border: 1px solid red;
+    display: block;
+    height: 50vh;
+    position: relative;
+    &__img {
+        width: 75%;
+        height: 40vh;
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.3),
+                rgba($primary-color, 0.3)
+                ), 
+            url('../../img/img-9-1.jpg') center top;
+        background-size: cover;
+    }
+    &__bg {
+        background: #222222;
+        width: 50%;
+        height: 50vh;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        right: 0;
+    }
+    &__texts {
+      position: absolute;
+      padding-right: 1.5rem;
+      right: 0;
+      top: 19vh;
+      color: $color-white;
+  
+      h2 {
+          font-size: 3.5rem;
+      }
+      h5 {
+          text-align: right;
+          font-size: 1rem;
+          font-weight: 500;
+          &:nth-child(2) {
+              margin-bottom: .5rem;
+          }
+      }
+    }
+    &__scroll {
+        display: flex;
+        align-items: center;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 36vh;
+        left: -10vh;
+
+        &--text {
+            font-size: 0.8rem;
+        }
+        &--line {
+            margin-left: 12px;
+            width: 140px;
+            height: 2px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            .line-one {
+                width: 13px;
+                height: 2px;
+                background: $primary-color;
+            }
+        }
+    }
+}
+
+.form {
+    @include content-padding;
+    max-width: 700px;
+    // border: 1px solid red;
+    margin: 0 auto;
+
+    &__desc {
+        margin-top: -6rem;
+        margin-bottom: 3rem;
+    }
+    &__list {
+
+    }
+    &__list-item {
+        // border: 1px solid red;
+        margin-bottom: 2.5rem;
+        // display: flex;
+        
+    }
+    &__label {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    &__required {
+        margin-left: 8px;
+        font-size: 0.7rem;
+        font-weight: 400;
+        padding: 1px 5px;
+        color: $color-white;
+        background: rgb(184, 35, 35);
+    }
+    &__radio-btn-wrap {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        input {
+            width: 17px;
+            height: 17px;
+            margin-right: 6px;
+        }
+        
+    }
+    &__input-text,
+    &__input-textarea {
+        font-size: 24px;
+        width: 100%;
+        border: 1px solid #222222;
+    }
+    &__input-text {
+        padding: 8px;
+        height: 44px;
+    }
+    &__input-textarea {
+        width: 100%;
+        max-width: 100%;
+        min-height: 250px;
+        padding: 0 8px;
+    }
+    &__list-item-policy {
+        border: 1px solid $primary-color;
+        padding: 14px;
+        height: 200px;
+        overflow: scroll;
+    }
+    .agree {
+        display: flex;
+        margin-bottom: 3rem;
+        width: 100%;
+        &__checkbox {
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+            margin-right: 10px;
+        }
+
+    }
+    &__submit-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &__submit {
+        width: 150px;
+        height: 36px;
+        border-radius: 3px;
+        border: none;
+        background: #111;
+        color: $color-white;
+        margin-bottom: 7rem;
+        @include transition-ease;
+        &:hover {
+            background: rgb(53, 53, 53);
+        }
+    }
+}

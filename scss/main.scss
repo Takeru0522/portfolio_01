@@ -2,6 +2,7 @@
 @import 'menu';
 @import 'home';
 @import 'about';
+@import 'contact';
 @import 'responsive';
 
 body {
@@ -44,7 +45,7 @@ header {
     @include transition-ease;
 
     &:hover {
-        background: #888;
+        background: rgb(53, 53, 53);
         
     }
 }

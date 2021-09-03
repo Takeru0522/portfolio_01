@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <title>Contact | Design for smile</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img class="header-logo__img" src="./img/logo-1.png" alt="">
+            <h3 class="header-logo__text">DIGSMAILE <span class="header-logo__text--last">INC.</span></h3>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+            <div class="menu-btn__text">MENU</div>
+        </div>
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu-nav__item">
+                    <a href="index.html" class="menu-nav__link">
+                        <svg class="menu-nav__logo" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="90.222" height="94.5"
+                            viewBox="0 0 60.148 63">
+                            <defs>
+                                <filter id="Subtraction_1" x="0" y="0" width="90.222" height="94.5"
+                                    filterUnits="userSpaceOnUse">
+                                    <feOffset dy="3" input="SourceAlpha" />
+                                    <feGaussianBlur stdDeviation="3" result="blur" />
+                                    <feFlood flood-opacity="0.161" />
+                                    <feComposite operator="in" in2="blur" />
+                                    <feComposite in="SourceGraphic" />
+                                </filter>
+                            </defs>
+                            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Subtraction_1)">
+                                <path id="Subtraction_1-2" data-name="Subtraction 1"
+                                    d="M22.969,45a23.236,23.236,0,0,1-8.941-1.768,22.925,22.925,0,0,1-7.3-4.822A22.405,22.405,0,0,1,1.8,31.258a22.141,22.141,0,0,1,.838-19.247A22.842,22.842,0,0,1,9.68,4.146v36.6H26.535a25.018,25.018,0,0,0,8.906-1.533,18.276,18.276,0,0,0,6.706-4.33A23.061,23.061,0,0,1,22.969,45ZM26.11,33.7H18.266v-23H26.11a12.673,12.673,0,0,1,8.858,3.087A11.152,11.152,0,0,1,38.3,22.2a11.152,11.152,0,0,1-3.332,8.414A12.673,12.673,0,0,1,26.11,33.7ZM40.661,8.152c-3.627-2.946-8.512-4.5-14.126-4.5H10.424a23.321,23.321,0,0,1,30.239,4.5Z"
+                                    transform="translate(9 6)" fill="" />
+                            </g>
+                        </svg>
+
+                    </a>
+                </li>
+                <li class="menu-nav__item active">
+                    <a href="about.html" class="menu-nav__link">ABOUT US</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="works.html" class="menu-nav__link">WORKS</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="culture.html" class="menu-nav__link">CULTURE</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="topics.html" class="menu-nav__link">TOPICS</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="contact.html" class="menu-nav__link">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="fv-contact">
+            <div class="fv-contact__img"></div>
+            <div class="fv-contact__bg"></div>
+            <div class="fv-contact__texts">
+                <h2>CONTACT</h2>
+                <h5>お問い合わせ</h5>
+            </div>
+            <div class="fv-contact__scroll">
+                <h6 class="fv-contact__scroll--text">SCROLL</h6>
+                <div class="fv-contact__scroll--line">
+                    <div class="line-one"></div>
+                    <div class="line-two"></div>
+                </div>
+            </div>
+        </section>
+
+        <form action="" class="form">
+            <p class="form__desc">
+                ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。
+            </p>
+            <ul class="form__list">
+                <li class="form__list-item">
+                    <label class="form__label" for="">
+                        お問い合わせ種別
+                        <span class="form__required">必須</span>
+                    </label>
+                    <div class="form__radio-btns">
+                        <div class="form__radio-btn-wrap">
+                            <input type="radio" class="form__radio-btn" name="kind">
+                            <label for="" class="form__radio-btns--label">制作依頼</label>
+                        </div>
+                        <div class="form__radio-btn-wrap">
+                            <input type="radio" class="form__radio-btn" name="kind">
+                            <label for="" class="form__radio-btns--label">採用</label>
+                        </div>
+                        <div class="form__radio-btn-wrap">
+                            <input type="radio" class="form__radio-btn" name="kind">
+                            <label for="" class="form__radio-btns--label">IR</label>
+                        </div>
+                        <div class="form__radio-btn-wrap">
+                            <input type="radio" class="form__radio-btn" name="kind">
+                            <label for="" class="form__radio-btns--label">その他</label>
+                        </div>
+                    </div>
+                </li>
+                <li class="form__list-item">
+                    <label class="form__label" for="">
+                        会社名・団体名
+                    </label>
+                    <input type="text" class="form__input-text">
+                </li>
+                <li class="form__list-item">
+                    <label class="form__label" for="">
+                        お名前
+                        <span class="form__required">必須</span>
+                    </label>
+                    <input type="text" class="form__input-text">
+                </li>
+                <li class="form__list-item">
+                    <label class="form__label" for="">
+                        メールアドレス
+                        <span class="form__required">必須</span>
+                    </label>
+                    <input type="text" class="form__input-text">
+                </li>
+                <li class="form__list-item">
+                    <label class="form__label" for="">
+                        電話番号
+                        <span class="form__required">必須</span>
+                    </label>
+                    <input type="text" class="form__input-text">
+                </li>
+                <li class="form__list-item">
+                    <label class="form__label" for="">
+                        お問い合わせ内容
+                        <span class="form__required">必須</span>
+                    </label>
+                    <textarea name="" id="" class="form__input-textarea"></textarea>
+                </li>
+                <li class="form__list-item">
+                    <label class="form__label" for="">
+                        PRIVACY POLICY
+                    </label>
+                    <div class="form__list-item-policy">
+                        <strong>個人情報保護方針</strong><br>
+                        株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。<br>
+                        <br>
+                        1.個人情報の収集、利用<br>
+                        当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。<br>
+                        <br>
+                        2.個人情報の第三者への開示と提供<br>
+                        収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。<br>
+                        業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。<br>
+                        <br>
+                        3.個人情報の保護<br>
+                        当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。<br>
+                        <br>
+                        4.法令および関連規範の遵守<br>
+                        当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。<br>
+                        <br>
+                        5.個人情報の開示・訂正・削除<br>
+                        当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。<br>
+                        <br>
+                        法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。<br>
+                        <br>
+                        お問い合わせ窓口<br>
+                        当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。<br>
+                        <br>
+                        DIGSMAILE INC.<br>
+                        63-9216-0303<br>
+                    </div>
+                </li>
+            </ul>
+            <div class="agree">
+                <input type="checkbox" name="" id="" class="agree__checkbox">
+                <p class="agree__text">
+                    個人情報の取り扱いについて同意のうえ送信します。
+                </p>
+            </div>
+            <div class="form__submit-wrap">
+                <input class="form__submit" type="submit" value="送信">
+            </div>
+        </form>
+
+
+
+    </main>
+
+    <footer>
+        &copy; 2021 DIGSMILE INC.
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

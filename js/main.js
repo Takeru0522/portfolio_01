@@ -32,5 +32,4 @@ function blurHeader() {
     } else {
         header.classList.remove('blur')
     }
-
 }
