@@ -46,17 +46,6 @@
     padding: 0 0.2rem;
     margin-top: 3rem;
     .home-content {
-        border: 1px solid red;
-        &.layout-a {
-            background: rgb(184, 124, 124);
-            background: url('../img/img-3.jpg');
-        }
-        &.layout-b {
-
-        }
-        &.layout-c {
-
-        }
         &__title {
             color: $primary-color;
             font-size: 2rem;
@@ -64,11 +53,61 @@
         }
         &__img {
             width: 100%;
-            margin-bottom: 1.8rem;
+            margin-bottom: 1.3rem;
         }
         &__desc {
-            margin-bottom: 1.8rem;
+            margin-bottom: 1.3rem;
             font-size: 1rem;
+            line-height: 2rem;
+            color: $primary-color;
+        }
+        &.layout-b {
+            @include content-padding;
+            background: $color-gray;
+            padding-top: 4rem;
+        }
+        &.layout-c {
+            @include content-padding;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+
+            
+        }
+        &__topics {
+            margin-bottom: 1.3rem;
+        }            
+        &__topic {
+            padding-top: 1.5rem;
+            border-bottom: 1px solid $color-gray;
+            &--date {
+                color: $color-dark-gray;
+                font-size: 0.7rem;
+            }
+            &--title {
+                padding: 0.5rem 0 0.8rem;
+            }
+        }
+        &:nth-child(5) {
+            padding-bottom: 4rem;
+        }
+    }
+    .layout-a {
+        @include content-padding;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: 
+    linear-gradient(
+        to right,
+        rgba($primary-color, 0.3),
+        rgba($primary-color, 0.3)
+        ), 
+    url('../../img/img-3.jpg') center center;
+        &__wrapper {
+            margin: 0 auto;
+            background: $color-white;
+            padding: 50px 20px;
+            // width: 95%;
+            
         }
     }
 }

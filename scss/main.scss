@@ -33,12 +33,23 @@ header {
     // width: 160px;
     display: inline-block;
     padding: .8rem 2.6rem ;
+    @include transition-ease;
     a {
         color: white;
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 600;
+    }
+    &:hover {
+        background: #888;
+        
     }
 }
 footer {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background: $color-dark-gray;
+    color: $color-white;
+    font-size: .8rem;
 }

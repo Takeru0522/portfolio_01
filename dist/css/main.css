@@ -227,15 +227,6 @@ li {
   margin-top: 3rem;
 }
 
-.home-contents .home-content {
-  border: 1px solid red;
-}
-
-.home-contents .home-content.layout-a {
-  background: #b87c7c;
-  background: url("../img/img-3.jpg");
-}
-
 .home-contents .home-content__title {
   color: #333333;
   font-size: 2rem;
@@ -244,12 +235,64 @@ li {
 
 .home-contents .home-content__img {
   width: 100%;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.3rem;
 }
 
 .home-contents .home-content__desc {
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.3rem;
   font-size: 1rem;
+  line-height: 2rem;
+  color: #333333;
+}
+
+.home-contents .home-content.layout-b {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #f0f0f0;
+  padding-top: 4rem;
+}
+
+.home-contents .home-content.layout-c {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.home-contents .home-content__topics {
+  margin-bottom: 1.3rem;
+}
+
+.home-contents .home-content__topic {
+  padding-top: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.home-contents .home-content__topic--date {
+  color: #919191;
+  font-size: 0.7rem;
+}
+
+.home-contents .home-content__topic--title {
+  padding: 0.5rem 0 0.8rem;
+}
+
+.home-contents .home-content:nth-child(5) {
+  padding-bottom: 4rem;
+}
+
+.home-contents .layout-a {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(to right, rgba(51, 51, 51, 0.3), rgba(51, 51, 51, 0.3)), url("../../img/img-3.jpg") center center;
+}
+
+.home-contents .layout-a__wrapper {
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -305,10 +348,25 @@ header .header-logo__text--last {
   background: #111;
   display: inline-block;
   padding: .8rem 2.6rem;
+  transition: all .4s ease-in-out;
 }
 
 .readmore-btn a {
   color: white;
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 600;
+}
+
+.readmore-btn:hover {
+  background: #888;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background: #919191;
+  color: #fff;
+  font-size: .8rem;
 }

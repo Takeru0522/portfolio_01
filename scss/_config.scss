@@ -1,6 +1,9 @@
 $primary-color: #333333;
 $color-white: #fff;
 $accent-color: #ff652f;
+$color-gray: #f0f0f0;
+$color-dark-gray: #919191;
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -17,7 +20,10 @@ li {
 @mixin transition-ease {
     transition: all .4s ease-in-out;
 }
-
+@mixin content-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 @mixin media-md {
     @media screen and (min-width: 768px) {
         @content;
