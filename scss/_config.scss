@@ -59,3 +59,17 @@ li {
         @return #fff;
     }
 }
+@mixin scroll-line {
+    animation: scroll-line 1.6s ease-in-out infinite;
+}                
+@keyframes scroll-line {
+    0% {
+        left: 140px;
+    }
+    20% {
+        left: 140px;
+    }
+    100% {
+        left: -140px;
+    }
+}

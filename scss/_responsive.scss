@@ -172,6 +172,7 @@
     .fv-about {
         &__img {
             width: 75%;
+            height: 60vh;
             background: 
             linear-gradient(
                 to right,
@@ -179,7 +180,6 @@
                 rgba($primary-color, 0.1)
                 ), 
             url('../../img/img-7-2.jpg') center top;
-            height: 60vh;
             background-size: cover; 
         }
         &__texts {
@@ -266,7 +266,7 @@
         &__bg {
             background: #222222;
             width: 70%;
-            height: 40vh;
+            height: 50vh;
         }
         &__texts {
             padding-right: 5rem;
@@ -279,6 +279,7 @@
         }
     }
     .form {
+        margin-top: 3rem;
         &__radio-btns {
             display: flex;
         }

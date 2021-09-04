@@ -13,6 +13,18 @@ li {
   list-style-type: none;
 }
 
+@keyframes scroll-line {
+  0% {
+    left: 140px;
+  }
+  20% {
+    left: 140px;
+  }
+  100% {
+    left: -140px;
+  }
+}
+
 header::after {
   transition: all .4s ease-in-out;
   background: transparent;
@@ -323,15 +335,15 @@ header.blur::after {
 
 .fv-about__img {
   width: 75%;
-  background: linear-gradient(to right, rgba(51, 51, 51, 0.3), rgba(51, 51, 51, 0.3)), url("../../img/img-7-1.jpg") center top;
   height: 60vh;
+  background: linear-gradient(to right, rgba(51, 51, 51, 0.3), rgba(51, 51, 51, 0.3)), url("../../img/img-7-1.jpg") center top;
   background-size: cover;
 }
 
 .fv-about__bg {
   background: #222222;
   width: 50%;
-  height: 70vh;
+  height: 50vh;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -457,10 +469,9 @@ header.blur::after {
 }
 
 .fv-contact {
+  height: 70vh;
   border: 1px solid red;
   display: block;
-  height: 50vh;
-  position: relative;
 }
 
 .fv-contact__img {
@@ -518,16 +529,34 @@ header.blur::after {
 .fv-contact__scroll--line {
   margin-left: 12px;
   width: 140px;
-  height: 2px;
-  background: #fff;
+  height: 4px;
   display: flex;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
-.fv-contact__scroll--line .line-one {
-  width: 13px;
+.fv-contact__scroll--line .line-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 11px;
   height: 2px;
-  background: #333333;
+  border: 1px solid white;
+  background: white;
+  background: rgba(0, 0, 0, 0);
+  mix-blend-mode: difference;
+}
+
+.fv-contact__scroll--line .line {
+  position: absolute;
+  left: 140px;
+  left: 0;
+  width: 140px;
+  height: 2px;
+  background: #fff;
+  animation: scroll-line 1.6s ease-in-out infinite;
 }
 
 .form {
@@ -631,6 +660,61 @@ header.blur::after {
 
 .form__submit:hover {
   background: #353535;
+}
+
+.test {
+  height: 100vh;
+  padding: 3rem;
+  background: #171717;
+}
+
+.test .sandbox {
+  height: 90vh;
+  background: #fff;
+  border: 2px solid #222;
+}
+
+.test .sandbox .container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: white;
+  overflow: hidden;
+}
+
+.test .sandbox p {
+  background: black;
+  color: white;
+  margin: 0;
+  position: absolute;
+}
+
+.test .sandbox .en {
+  padding: 10px 20px;
+  padding-left: 100px;
+  top: 30px;
+  left: 0;
+  font-size: 4rem;
+}
+
+.test .sandbox .ja {
+  font-size: 4rem;
+  writing-mode: vertical-rl;
+  font-family: 'HiraMinProN-W6', serif;
+  letter-spacing: 1rem;
+  padding: 20px 10px;
+  bottom: 0;
+  right: 60px;
+}
+
+.test .sandbox .bg {
+  mix-blend-mode: difference;
+  width: 90vw;
+  height: 100%;
+  background: white;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -756,8 +840,8 @@ header.blur::after {
   }
   .fv-about__img {
     width: 75%;
-    background: linear-gradient(to right, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.1)), url("../../img/img-7-2.jpg") center top;
     height: 60vh;
+    background: linear-gradient(to right, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.1)), url("../../img/img-7-2.jpg") center top;
     background-size: cover;
   }
   .fv-about__texts {
@@ -830,7 +914,7 @@ header.blur::after {
   .fv-contact__bg {
     background: #222222;
     width: 70%;
-    height: 40vh;
+    height: 50vh;
   }
   .fv-contact__texts {
     padding-right: 5rem;
@@ -840,6 +924,9 @@ header.blur::after {
   }
   .fv-contact__texts h5 {
     font-size: 1.7rem;
+  }
+  .form {
+    margin-top: 3rem;
   }
   .form__radio-btns {
     display: flex;
