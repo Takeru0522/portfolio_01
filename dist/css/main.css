@@ -319,6 +319,10 @@ header.blur::after {
   padding: 0.5rem 0 0.8rem;
 }
 
+.home-contents .home-content:nth-child(3) {
+  padding-bottom: 2rem;
+}
+
 .home-contents .home-content:nth-child(5) {
   padding-bottom: 4rem;
 }
