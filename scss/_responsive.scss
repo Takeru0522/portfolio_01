@@ -289,6 +289,9 @@
     }
     .agree {
         justify-content: center;
+        &__text {
+            margin-left: 5px;
+        }
     }
     
 }

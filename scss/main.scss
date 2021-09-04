@@ -15,8 +15,11 @@ header {
     width: 100%;
     .header-logo {
         padding: .7rem;
-        display: flex;
-        align-items: center;
+        &__link {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
         &__img {
             margin-top: 3px;
             height: 1.8rem;

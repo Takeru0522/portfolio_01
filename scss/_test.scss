@@ -1,51 +1,157 @@
 .test {
-    height: 100vh;
-    padding: 3rem;
-    background: rgb(23, 23, 23);
+    width: 100vw;
+    height: auto;
+    padding: .5rem;
+    background: rgb(8, 36, 89);
     .sandbox {
-        height: 90vh;
+        height: 95vh;
+        width: 100%;
         background: #fff;
         border: 2px solid #222;
-
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
         .container {
-            width: 100%;
-            height: 100%;
+            border: 1px solid red;
+            width: 33%;
+            height: 300px;
             position: relative;
             background: white;
             overflow: hidden;
         }
-        p {
-            background: black;
-            color: white;
-            margin: 0;
-            position: absolute;
-            
-        }
-        .en {
-            padding: 10px 20px;
-            padding-left: 100px;
-            top: 30px;
-            left: 0;
-            font-size: 4rem;
-        }
-        .ja {
-            font-size: 4rem;
-            writing-mode: vertical-rl;
-            font-family: 'HiraMinProN-W6', serif;
-            letter-spacing: 1rem;
-            padding: 20px 10px;
-            bottom: 0;
-            right: 60px;
-        }
-        .bg {
-            mix-blend-mode: difference;
-            // border: 1px solid pink;
-            width: 90vw;
-            height: 100%;
-            background: white;
-            transform: rotate(45deg);
-            position: absolute;
-            top: -100px;
-        }
+    }
+}
+.reverse-color {
+    p {
+        background: black;
+        color: white;
+        margin: 0;
+        position: absolute;
+        
+    }
+    .en {
+        padding: 10px 20px;
+        padding-left: 100px;
+        top: 30px;
+        left: 0;
+        font-size: 10px;
+    }
+    .ja {
+        font-size: 10px;
+        writing-mode: vertical-rl;
+        font-family: 'HiraMinProN-W6', serif;
+        letter-spacing: 10px;
+        padding: 20px 10px;
+        bottom: 0;
+        right: 60px;
+    }
+    .bg {
+        mix-blend-mode: difference;
+        border: 1px solid pink;
+        width: 70%;
+        height: 70%;
+        background: white;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        left: 100px;
+    }
+
+}
+.custom-checkbox {
+    @include flex-center;
+    flex-direction: column;
+
+    input[type=checkbox],input[type=radio] {
+        appearance: none;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        vertical-align: -0.8rem;
+        transition:all .15s ease-out 0s;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        margin: .4rem;
+        outline: none;
+        border-radius: 10%;
+    }
+    /* Checkbox */
+    input[type=checkbox]:before,input[type=checkbox]:after {
+        position: absolute;
+        content: "";
+        background: #fff;
+        // background: red;
+        transition: all .2s ease-in-out;
+    }
+    input[type=checkbox]:before {
+        left: 2px;
+        top: 6px;
+        width: 0px;
+        height: 2px;
+        transform: rotate(45deg);
+    }
+    input[type=checkbox]:after {
+        right: 9px;
+        bottom: 3px;
+        width: 2px;
+        height: 0;
+        transform: rotate(40deg);
+        transition-delay: .2s;
+    }
+    input[type=checkbox]:checked:before {
+        left: 1px;
+        top: 10px;
+        width: 6px;
+        height: 2px;
+    }
+    input[type=checkbox]:checked:after {
+        right: 5px;
+        bottom: 1px;
+        width: 2px;
+        height: 14px;
+    }
+    input[type=checkbox]:indeterminate:before,input[type=checkbox]:indeterminate:after {
+        width: 7px;
+        height: 2px;
+        transform: rotate(0);
+    }
+    input[type=checkbox]:indeterminate:before {
+        left: 1px;
+        top: 7px;
+    }
+    input[type=checkbox]:indeterminate:after {
+        right: 1px;
+        bottom: 7px;
+    }
+
+
+
+    /* Radio */
+    input[type=radio] {
+        border-radius: 50%;
+    }
+    input[type=radio]:checked:before {
+        transform: scale(1);
+    }
+    input[type=radio]:before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 3px;
+        transform: scale(0);
+        transition: all ease-out 250ms;
+    }
+    /* 色は青色のみ */
+    input[type=checkbox].blue,input[type=radio].blue {
+        border: 2px solid #2196f3;
+    }
+    input[type=checkbox].blue:checked,input[type=checkbox].blue:indeterminate,input[type=radio].blue:checked:before {
+        background: #2196f3;
     }
 }

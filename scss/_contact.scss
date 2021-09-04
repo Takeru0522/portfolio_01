@@ -1,8 +1,6 @@
 .fv-contact {
     height: 70vh;
-    border: 1px solid red;
     display: block;
-    // position: relative;
     &__img {
         width: 75%;
         height: 40vh;
@@ -44,16 +42,6 @@
       }
     }
     &__scroll {
-        
-        // animation: test-anime 1s ease-in-out infinite;
-        // @keyframes test-anime {
-        //     0% {
-        //         background: red;
-        //     }
-        //     100% {
-        //         background: blue;
-        //     }
-        // }
         display: flex;
         align-items: center;
         transform: rotate(-90deg);
@@ -86,8 +74,6 @@
                 background: white;
                 background: rgba(0,0,0, 0);
                 mix-blend-mode: difference;
-                
-                
             }
             .line {
                 position: absolute;
@@ -135,10 +121,12 @@
         margin-bottom: 5px;
         display: flex;
         align-items: center;
+        @include radio-btn;
+        
         input {
-            width: 17px;
-            height: 17px;
-            margin-right: 6px;
+            // width: 17px;
+            // height: 17px;
+            // margin-right: 6px;
         }
         
     }
@@ -166,15 +154,13 @@
     }
     .agree {
         display: flex;
+        align-items: flex-start;
         margin-bottom: 3rem;
         width: 100%;
-        &__checkbox {
-            width: 20px;
-            height: 20px;
-            margin-top: 2px;
-            margin-right: 10px;
+        @include checkbox;
+        &__text {
+            margin-top: .3rem;
         }
-
     }
     &__submit-wrap {
         width: 100%;
