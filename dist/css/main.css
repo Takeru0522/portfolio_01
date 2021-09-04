@@ -4,6 +4,8 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
+  font-family: 'Montserrat', 'YuGothic';
+  color: #333333;
 }
 
 a {
@@ -158,6 +160,10 @@ header.blur::after {
 
 .nav .menu-nav__item:nth-child(1).open {
   opacity: 1;
+}
+
+.nav .menu-nav__item:nth-child(3), .nav .menu-nav__item:nth-child(4), .nav .menu-nav__item:nth-child(5) {
+  pointer-events: none;
 }
 
 .nav .menu-nav__item.active > a {
