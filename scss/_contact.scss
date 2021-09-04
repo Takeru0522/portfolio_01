@@ -64,13 +64,11 @@
             .line-bg {
                 position: absolute;
                 top: 0px;
-                left: 0px;
+                left: 1px;
                 z-index: 100;
                 width: 11px;
                 height: 2px;
-                border: 1px solid white;
-                // background: rgba(255, 0, 0, 0.5);
-                // filter: invert(100%);
+                border: 2px solid white;
                 background: white;
                 background: rgba(0,0,0, 0);
                 mix-blend-mode: difference;
