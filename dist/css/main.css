@@ -247,14 +247,15 @@ header.blur::after {
   padding-right: 1.5rem;
   right: 0;
   top: 25vh;
-  color: #fff;
 }
 
 .fv__texts h2 {
+  color: #fff;
   font-size: 4rem;
 }
 
 .fv__texts h5 {
+  color: #fff;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -362,14 +363,15 @@ header.blur::after {
   padding-right: 1.5rem;
   right: 0;
   top: 25vh;
-  color: #fff;
 }
 
 .fv-about__texts h2 {
+  color: #fff !important;
   font-size: 3.5rem;
 }
 
 .fv-about__texts h5 {
+  color: #fff !important;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -502,14 +504,15 @@ header.blur::after {
   padding-right: 1.5rem;
   right: 0;
   top: 19vh;
-  color: #fff;
 }
 
 .fv-contact__texts h2 {
+  color: #fff;
   font-size: 3.5rem;
 }
 
 .fv-contact__texts h5 {
+  color: #fff;
   text-align: right;
   font-size: 1rem;
   font-weight: 500;
@@ -1238,6 +1241,7 @@ header .header-logo__text {
 }
 
 header .header-logo__text--last {
+  color: #fff;
   font-size: 1rem;
 }
 
