@@ -82,6 +82,11 @@ li {
 @mixin checkbox {
     input[type=checkbox] {
         appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
         position: relative;
         right: 0;
         bottom: 0;
@@ -112,6 +117,10 @@ li {
         width: 0px;
         height: 2px;
         transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
     }
     input[type=checkbox]:after {
         right: 9px;
@@ -119,6 +128,10 @@ li {
         width: 2px;
         height: 0;
         transform: rotate(40deg);
+        -webkit-transform: rotate(40deg);
+        -moz-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+        -o-transform: rotate(40deg);
         transition-delay: .2s;
     }
     input[type=checkbox]:checked:before {
@@ -137,6 +150,10 @@ li {
         width: 7px;
         height: 2px;
         transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
     }
     input[type=checkbox]:indeterminate:before {
         left: 1px;
@@ -153,6 +170,11 @@ li {
 }
 @mixin radio-btn {
     input[type=radio] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
         appearance: none;
         position: relative;
         right: 0;
